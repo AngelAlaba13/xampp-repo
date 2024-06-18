@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+<?php
+        $user = $_GET["username"];
+        $pass = $_GET["password"];
+        if ($user == "admin" && $pass == "password123"){
+            echo "Welcome";
+        }
+        else {
+            echo "Incorrect credentials";
+        }
+    ?>
+    
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,23 +17,15 @@
     <title>PHP Practice</title>
 </head>
 <body>
-        <p>Username: </p>
-        <input type= "text" name=username>
+        <form action="index.php" method="get">
+            <p>Username: </p>
+            <input type= "text" name="username">
+            <p>Password:</p>
+            <input type="password" name="password">
+            <input type="submit" value="Log in">
+        </form>
 
-        <p>Password:</p>
-        <input type="text" name=password>
-
-    <?php
-        $username = "admin";
-        $password = "password123";
-
-        if ($username == "admin" && $password == "password123"){
-            echo "Welcome";
-        }
-        else {
-            echo "Incorrect credentials";
-        }
-    ?>
+    
     
 </body>
 </html>
