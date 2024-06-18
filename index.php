@@ -6,6 +6,12 @@
     <title>PHP Practice</title>
 </head>
 <body>
+        <p>Username: </p>
+        <input type= "text" name=username>
+
+        <p>Password:</p>
+        <input type="text" name=password>
+
     <?php
         $username = "admin";
         $password = "password123";
