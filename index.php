@@ -6,9 +6,16 @@
     <title>PHP Practice</title>
 </head>
 <body>
+    <?php
+        $username = "admin";
+        $password = "password123";
 
-    <?php  
-        echo "Hello World";
+        if ($username == "admin" && $password == "password123"){
+            echo "Welcome";
+        }
+        else {
+            echo "Incorrect credentials";
+        }
     ?>
     
 </body>
