@@ -7,8 +7,13 @@
 </head>
 <body>
     <form action="index.php" method="post">
-        <label>Enter your name</label> <br>
-        <input type="text" name="name">
+        <label>What do you want to order?</label> <br>
+        <input name="radio_name" type="radio" value="pizza">
+        <label>pizza</label> <br>
+        <input name="radio_name" type="radio" value="burger">
+        <label>burger</label> <br>
+        <input name="radio_name" type="radio" value="fries">
+        <label>fries</label> <br>        
         <input type="submit" value="enter">
     </form>
     
