@@ -6,17 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="index.php" method="get">
+    <form action="index.php" method="post">
         <label>Enter your name</label> <br>
         <input type="text" name="name">
+        <input type="submit" value="enter">
     </form>
     
 </body>
 </html>
 
 <?php 
-    $name = "";
-    $name = $_GET["name"];
+    $name = $_POST["name"];
 
     if(empty($name)){
         echo"Please enter your name";
