@@ -11,11 +11,15 @@
         <input type="text" name="username"> <br>
         <label>Password</label>
         <input type="text" name="password"> <br>
-        <input type="submit" value="submit">
+        <input type="submit" name="submit_button" value="submit">
     </form>
 </body>
 </html>
 
 <?php
+    if(isset($_POST["submit_button"])){
+        $username = $_POST["username"];
+        header("Location: home.php");
+    }
     
 ?>

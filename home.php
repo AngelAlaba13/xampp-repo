@@ -6,7 +6,8 @@
     <title>Log in</title>
 </head>
 <body>
-    <form action="index.php" method="post">
+    <h2>This is the home page</h2>
+    <form action="home.php" method="post">
         <label>Enter</label>
         <input type="text" name="num1"> <br>
         <label>Enter</label>
