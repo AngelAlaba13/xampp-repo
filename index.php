@@ -7,32 +7,20 @@
 </head>
 <body>
     <form action="index.php" method="post">
-        <label>What do you want to order?</label> <br>
-        <input name="radio_name" type="radio" value="pizza">
-        <label>pizza</label> <br>
-        <input name="rdio_name" type="radio" value="burger">
-        <label>burger</label> <br>
-        <input name="radio_name" type="radio" value="fries">
-        <label>fries</label> <br>        
-        <input type="submit" value="enter">
+        <label>username</label>
+        <input type="text" name="username"> <br>
+        <label>password</label>
+        <input type="password" name="password"> <br>
+        <input type="submit" name="submit_button" value="log in">
     </form>
     
 </body>
 </html>
 
-<?php 
-    $order = $_POST["radio_name"];
-
-
-    echo"You ordered {$order}";
-
-    if(empty($order)){
-        echo"Please enter your name";
-    }
-    else{
-        echo"hello {$order}, welcome to php";
-    }
-
+<?php
     
-
+    if(isset($_POST["submit_button"])){
+        $username = $_POST["username"];
+        echo"Welcome {$username}";
+    }
 ?>
