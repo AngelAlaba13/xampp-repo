@@ -37,10 +37,11 @@
             $sql = "INSERT INTO users(username, password)
                     VALUES
                     ('$username', '$hash_password')";
-                     
+
             try{
                     mysqli_query($conn, $sql);
                     echo "User sucessfully registered!";
+                    echo"Your information is appended to the database";
                 }
                 catch(mysqli_sql_exception){
                     echo "The user is not registered";
