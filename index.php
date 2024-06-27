@@ -21,13 +21,16 @@
 </html>
 
 <?php 
-    $name = $_POST["name"];
+    $order = $_POST["radio_name"];
 
-    if(empty($name)){
+
+    echo"You ordered {$order}";
+
+    if(empty($order)){
         echo"Please enter your name";
     }
     else{
-        echo"hello {$name}, welcome to php";
+        echo"hello {$order}, welcome to php";
     }
 
     
