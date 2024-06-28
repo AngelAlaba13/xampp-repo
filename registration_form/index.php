@@ -55,6 +55,7 @@
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         if(isset($_POST["check_button"])){
             echo("Hello WORLD");
+            echo("try this if this shows up then your code is working");
         }
         
     }
